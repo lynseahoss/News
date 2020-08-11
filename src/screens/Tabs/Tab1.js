@@ -5,9 +5,9 @@ import {Container, Content, List, Text} from 'native-base';
 export default class Tab1 extends Component {
   render() {
     return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
+      <Container>
+        <Content></Content>
+      </Container>
     );
   }
 }
