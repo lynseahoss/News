@@ -27,18 +27,21 @@ export default class TabScreen extends Component {
           <Tab
             tabStyle={{backgroundColor: '#7F35B2'}}
             activeTabStyle={{backgroundColor: '#7F35B2'}}
+            textStyle={{color: 'white'}}
             heading="Tab1">
             <Tab1 />
           </Tab>
           <Tab
             tabStyle={{backgroundColor: '#7F35B2'}}
             activeTabStyle={{backgroundColor: '#7F35B2'}}
+            textStyle={{color: 'white'}}
             heading="Tab2">
             <Tab2 />
           </Tab>
           <Tab
             tabStyle={{backgroundColor: '#7F35B2'}}
             activeTabStyle={{backgroundColor: '#7F35B2'}}
+            textStyle={{color: 'white'}}
             heading="Tab3">
             <Tab3 />
           </Tab>
