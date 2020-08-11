@@ -24,13 +24,13 @@ export default class TabScreen extends Component {
           <Right />
         </Header>
         <Tabs tabBarUnderlineStyle={{backgroundColor: 'white'}}>
-          <Tab heading="Tab1">
+          <Tab tabStyle={{backgroundColor: '#7F35B2'}} heading="Tab1">
             <Tab1 />
           </Tab>
-          <Tab heading="Tab2">
+          <Tab tabStyle={{backgroundColor: '#7F35B2'}} heading="Tab2">
             <Tab2 />
           </Tab>
-          <Tab heading="Tab3">
+          <Tab tabStyle={{backgroundColor: '#7F35B2'}} heading="Tab3">
             <Tab3 />
           </Tab>
         </Tabs>
