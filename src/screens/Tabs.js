@@ -16,7 +16,13 @@ export default class TabScreen extends Component {
   render() {
     return (
       <Container>
-        <Header style={{backgroundColor: '#E31C79'}} hasTabs></Header>
+        <Header style={{backgroundColor: '#E31C79'}} hasTabs>
+          <Left />
+          <Body>
+            <Title style={{color: 'white'}}>Sprinkles News</Title>
+          </Body>
+          <Right />
+        </Header>
         <Tabs>
           <Tab heading="Tab1">
             <Tab1 />
