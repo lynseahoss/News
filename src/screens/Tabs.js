@@ -29,7 +29,7 @@ export default class TabScreen extends Component {
             activeTabStyle={{backgroundColor: '#7F35B2'}}
             activeTextStyle={{color: 'white'}}
             textStyle={{color: 'white'}}
-            heading="Tab1">
+            heading="US News">
             <Tab1 />
           </Tab>
           <Tab
@@ -37,7 +37,7 @@ export default class TabScreen extends Component {
             activeTabStyle={{backgroundColor: '#7F35B2'}}
             textStyle={{color: 'white'}}
             activeTextStyle={{color: 'white'}}
-            heading="Tab2">
+            heading="Entertainment">
             <Tab2 />
           </Tab>
           <Tab
@@ -45,7 +45,7 @@ export default class TabScreen extends Component {
             activeTabStyle={{backgroundColor: '#7F35B2'}}
             textStyle={{color: 'white'}}
             activeTextStyle={{color: 'white'}}
-            heading="Tab3">
+            heading="Arts">
             <Tab3 />
           </Tab>
         </Tabs>
