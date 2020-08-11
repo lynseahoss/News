@@ -6,11 +6,11 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import TabScreen from './src/screens/Tabs/TabScreen';
+import React, {Component} from 'react';
+import TabScreen from './src/screens/Tabs/Tabs';
 
-const App: () => React$Node = () => {
-  return <></>;
-};
-
-export default App;
+export default class App extends Component {
+  render() {
+    return <TabScreen />;
+  }
+}
