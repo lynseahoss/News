@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import TabScreen from './src/screens/Tabs/TabScreen';
 import {
   SafeAreaView,
   StyleSheet,
