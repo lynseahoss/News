@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Alert, View, ActivityIndicator} from 'react-native';
+import {Container, Content, List, Text} from 'native-base';
 
-export default class Tab3 extends Component {
+export default class Tab1 extends Component {
   render() {
     return (
       <View>
