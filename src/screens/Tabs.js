@@ -23,7 +23,7 @@ export default class TabScreen extends Component {
           </Body>
           <Right />
         </Header>
-        <Tabs>
+        <Tabs tabBarUnderlineStyle={{backgroundColor: 'white'}}>
           <Tab heading="Tab1">
             <Tab1 />
           </Tab>
