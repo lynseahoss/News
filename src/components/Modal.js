@@ -11,7 +11,7 @@ import {
   Title,
   Button,
 } from 'native-base';
-
+const webViewHeight = Dimensions.get('window').height - 56;
 export default class ModalComponent extends Component {
   constructor(props) {
     super(props);
