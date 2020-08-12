@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Dimensions, Modal, View, Share} from 'react-native';
+
 import {
   Container,
   Header,
@@ -47,7 +48,7 @@ export default class ModalComponent extends Component {
               </Button>
             </Right>
           </Header>
-          <Content>
+          <Content contentContainerStyle={{height: webViewHeight}}>
             <View
               source={{uri: url}}
               style={{flex: 1}}
