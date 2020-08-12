@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Alert, View, ActivityIndicator} from 'react-native';
 import {Container, Content, List, Text} from 'native-base';
 
+import DataItem from '../../components/DataItem';
 import {getArticles} from '../../service/news';
 
 export default class Tab1 extends Component {
@@ -16,12 +17,17 @@ export default class Tab1 extends Component {
 
   //lifecycle hook
   componentDidMount() {
-    getArticles().then(data => {
-      this.setState({
-        isLoading: false,
-        data: data,
-      });
-    });
+    getArticles().then(
+      data => {
+        this.setState({
+          isLoading: false,
+          data: data,
+        });
+      },
+      error => {
+        Alert.alert('Error', 'Something went wrong!');
+      },
+    );
   }
   render() {
     return (
