@@ -1,9 +1,36 @@
 import React, {Component} from 'react';
-import { ListItem, Left, Right, Thumbnail, Body, View, Text, Button } from 'native-base'
+import {
+  ListItem,
+  Left,
+  Right,
+  Thumbnail,
+  Body,
+  View,
+  Text,
+  Button,
+} from 'native-base';
 
 class DataItem extends Component {
-    render(){
-        return()
-    }
+  render() {
+    return (
+      <ListItem>
+        <Left>
+          <Thumbnail />
+        </Left>
+        <Body>
+          <Text numberOfLines={2}>Hello Sprinkles</Text>
+          <Text numberOfLines={2}>Let's eat some Sprinkles</Text>
+          <View>
+            <Text></Text>
+          </View>
+        </Body>
+        <Right>
+          <Button>
+            <Text></Text>
+          </Button>
+        </Right>
+      </ListItem>
+    );
+  }
 }
-export default DataItem 
+export default DataItem;
