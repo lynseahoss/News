@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Dimensions, Modal, View, Share} from 'react-native';
-import {WebView} from 'react-native-webview';
 import {
   Container,
   Header,
