@@ -24,6 +24,12 @@ export default class Tab1 extends Component {
     });
   };
 
+  handleModalClose = () => {
+    this.setState({
+      setModalVisible: false,
+      modalArticleData: {},
+    });
+  };
   //lifecycle hook
   componentDidMount() {
     getArticles().then(
