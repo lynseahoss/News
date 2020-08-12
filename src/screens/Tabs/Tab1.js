@@ -3,6 +3,7 @@ import {Alert, View, ActivityIndicator} from 'react-native';
 import {Container, Content, List, Text} from 'native-base';
 
 import DataItem from '../../components/DataItem';
+import ModalComponent from '../../components/Modal';
 import {getArticles} from '../../service/news';
 
 export default class Tab1 extends Component {
@@ -12,10 +13,15 @@ export default class Tab1 extends Component {
     this.state = {
       isLoading: true,
       data: null,
+      setModalVisible: false,
+      modalArticleData: {},
     };
   }
   handleItemDataOnPress = articleData => {
-    this.setState({});
+    this.setState({
+      setModalVisible: true,
+      modalArticleData: articleData,
+    });
   };
 
   //lifecycle hook
@@ -49,6 +55,11 @@ export default class Tab1 extends Component {
     return (
       <Container>
         <Content>{view}</Content>
+        <ModalComponent
+          showModal={this.state.setModalVisible}
+          articleData={this.state.modalArticleData}
+          onClose={this.handleModalClose}
+        />
       </Container>
     );
   }
