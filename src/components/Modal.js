@@ -13,6 +13,12 @@ import {
   } from 'native-base';
 
 export default class ModalComponent extends Component {
+    constructor(props){
+        super(props)
+    }
+    handleClose = ()=>{
+        return this.props.onClose()
+    }
     render(){
         return()
     }
