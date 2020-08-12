@@ -21,14 +21,28 @@ class DataItem extends Component {
   };
   render() {
     return (
-      <ListItem>
+      <ListItem thumbnail>
         <Left>
-          <Thumbnail />
+          <Thumbnail
+            square
+            source={{
+              uri:
+                this.data.urlToImage != null
+                  ? this.data.urlToImage
+                  : 'data:image/png; base64, https://pixabay.com/photos/taxi-cab-traffic-cab-new-york-381233/',
+            }}
+          />
         </Left>
         <Body>
-          <Text numberOfLines={2}>Hello Sprinkles</Text>
-          <Text numberOfLines={2}>Let's eat some Sprinkles</Text>
-          <View>
+          <Text numberOfLines={2}>{this.data.title}</Text>
+          <Text numberOfLines={2}>{this.data.description}</Text>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              marginTop: 8,
+              marginLeft: 0,
+            }}>
             <Text></Text>
           </View>
         </Body>
