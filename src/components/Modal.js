@@ -20,6 +20,8 @@ export default class ModalComponent extends Component {
         return this.props.onClose()
     }
     render(){
+        const {showModal, articleData} = this.props;
+        const {url} = articleData;
         return()
     }
 }
