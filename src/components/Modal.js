@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Dimensions, Modal, Share} from 'react-native';
+import {Dimensions, Modal, View, Share} from 'react-native';
 import {WebView} from 'react-native-webview';
 import {
   Container,
@@ -48,7 +48,15 @@ export default class ModalComponent extends Component {
               </Button>
             </Right>
           </Header>
-          <Content></Content>
+          <Content>
+            <View
+              source={{uri: url}}
+              style={{flex: 1}}
+              onError={this.handleClose}
+              startInLoadingState
+              scalesPageToFit
+            />
+          </Content>
         </Container>
       </Modal>
     );
