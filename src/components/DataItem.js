@@ -11,6 +11,10 @@ import {
 } from 'native-base';
 
 class DataItem extends Component {
+  constructor(props) {
+    super(props);
+    this.data = props.data;
+  }
   render() {
     return (
       <ListItem>
