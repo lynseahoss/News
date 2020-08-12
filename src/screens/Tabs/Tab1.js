@@ -14,6 +14,9 @@ export default class Tab1 extends Component {
       data: null,
     };
   }
+  handleItemDataOnPress = articleData => {
+    this.setState({});
+  };
 
   //lifecycle hook
   componentDidMount() {
