@@ -43,12 +43,12 @@ class DataItem extends Component {
               marginTop: 8,
               marginLeft: 0,
             }}>
-            <Text></Text>
+            <Text note>{this.data.source.name}</Text>
           </View>
         </Body>
         <Right>
-          <Button>
-            <Text></Text>
+          <Button transparent onPress={this.handlePress}>
+            <Text>View</Text>
           </Button>
         </Right>
       </ListItem>
