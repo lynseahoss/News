@@ -34,7 +34,7 @@ export default class ModalComponent extends Component {
           <Header style={{backgroundColor: '#E31C79'}}>
             <Left>
               <Button onPress={this.handleClose} transparent>
-                <Icon name="close" style={{color: 'white', fontSize: 12}} />
+                <Icon name="close" style={{color: 'white', fontSize: 30}} />
               </Button>
             </Left>
             <Body>
