@@ -34,7 +34,9 @@ class DataItem extends Component {
           />
         </Left>
         <Body>
-          <Text numberOfLines={2}>{this.data.title}</Text>
+          <Text numberOfLines={2} style={{fontWeight: 'bold'}}>
+            {this.data.title}
+          </Text>
           <Text numberOfLines={2}>{this.data.description}</Text>
           <View
             style={{
