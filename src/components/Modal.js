@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Dimensions, Modal, View, Share} from 'react-native';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faCoffee} from '@fortawesome/free-solid-svg-icons';
 
 import {
   Container,
