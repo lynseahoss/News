@@ -43,7 +43,11 @@ export default class Tab1 extends Component {
     return (
       <Container>
         <Content>{view}</Content>
-        <ModalComponent />
+        <ModalComponent
+          showModal={this.state.setModalVisible}
+          articleData={this.state.modalArticleData}
+          onClose={this.handleModalClose}
+        />
       </Container>
     );
   }
