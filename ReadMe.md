@@ -24,7 +24,7 @@ Sprinkles News is a React Native project that fetches news articles from [NewsAp
 To install, run following command in terminal:
 
 ```
-npx create-react-app
+npx create-react-native-app
 ```
 
 Install following Packages on Client Side
