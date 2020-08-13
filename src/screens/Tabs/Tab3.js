@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Alert, View, ActivityIndicator} from 'react-native';
 import {Container, Content, List, Text} from 'native-base';
 
+import DataItem from '../../components/DataItem';
+import ModalComponent from '../../components/Modal';
 import {getArticles} from '../../service/news';
 
 export default class Tab1 extends Component {
