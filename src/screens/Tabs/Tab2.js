@@ -29,10 +29,22 @@ export default class Tab1 extends Component {
   }
 
   render() {
-    let view = this.state.isLoading;
+    let view = this.state.isLoading ? (
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <ActivityIndicator animating={this.state.isLoading} color="#00f0ff" />
+        <Text style={{marginTop: 10}} children="Please Wait..." />
+      </View>
+    ) : (
+      <List
+        dataArray={this.state.data}
+        renderRow={item => {
+          return <DataItem onPress={this.handleItemDataOnPress} data={item} />;
+        }}
+      />
+    );
     return (
       <Container>
-        <Content></Content>
+        <Content>{view}</Content>
       </Container>
     );
   }
