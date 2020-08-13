@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Dimensions, Modal, View, Share} from 'react-native';
+import {Dimensions, Modal} from 'react-native';
+import {WebView} from 'react-native-webview';
 
 import {
   Container,
@@ -42,14 +43,10 @@ export default class ModalComponent extends Component {
                 children={articleData.title}
                 style={{color: 'white'}}></Title>
             </Body>
-            <Right>
-              <Button onPress={this.handleShare} transparent>
-                <Icon name="share" style={{color: 'white', fontSize: 12}} />
-              </Button>
-            </Right>
+            <Right />
           </Header>
           <Content contentContainerStyle={{height: webViewHeight}}>
-            <View
+            <WebView
               source={{uri: url}}
               style={{flex: 1}}
               onError={this.handleClose}
