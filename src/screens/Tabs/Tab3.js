@@ -13,6 +13,8 @@ export default class Tab1 extends Component {
     this.state = {
       isLoading: true,
       data: null,
+      setModalVisible: false,
+      modalArticleData: {},
     };
   }
 
