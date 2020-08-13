@@ -17,7 +17,12 @@ export default class Tab1 extends Component {
       modalArticleData: {},
     };
   }
-
+  handleItemDataOnPress = articleData => {
+    this.setState({
+      setModalVisible: true,
+      modalArticleData: articleData,
+    });
+  };
   //lifecycle hook
   componentDidMount() {
     getArticles('entertainment').then(data => {
