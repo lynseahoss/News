@@ -45,7 +45,7 @@ export default class TabScreen extends Component {
             activeTabStyle={{backgroundColor: '#7F35B2'}}
             textStyle={{color: 'white'}}
             activeTextStyle={{color: 'white'}}
-            heading="Arts">
+            heading="Science">
             <Tab3 />
           </Tab>
         </Tabs>
