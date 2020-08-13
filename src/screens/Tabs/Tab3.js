@@ -23,7 +23,12 @@ export default class Tab1 extends Component {
       modalArticleData: articleData,
     });
   };
-
+  handleModalClose = () => {
+    this.setState({
+      setModalVisible: false,
+      modalArticleData: {},
+    });
+  };
   //lifecycle hook
   componentDidMount() {
     getArticles('science').then(data => {
