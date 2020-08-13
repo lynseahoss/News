@@ -20,7 +20,7 @@ export default class Tab1 extends Component {
 
   //lifecycle hook
   componentDidMount() {
-    getArticles().then(data => {
+    getArticles('entertainment').then(data => {
       this.setState({
         isLoading: false,
         data: data,
