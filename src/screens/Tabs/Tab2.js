@@ -29,6 +29,7 @@ export default class Tab1 extends Component {
   }
 
   render() {
+    let view = this.state.isLoading;
     return (
       <Container>
         <Content></Content>
