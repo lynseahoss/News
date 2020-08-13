@@ -31,7 +31,7 @@ export default class Tab1 extends Component {
     let view = this.state.isLoading;
     return (
       <Container>
-        <Content></Content>
+        <Content>{view}</Content>
       </Container>
     );
   }
